@@ -56,12 +56,13 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/portfolio-social-card.svg',
     navbar: {
       title: 'Hussain Khalid',
       logo: {
         alt: 'Hussain Khalid Logo',
         src: 'img/logo.svg',
+        srcDark: 'img/logo-dark.svg',
       },
       items: [
         {
