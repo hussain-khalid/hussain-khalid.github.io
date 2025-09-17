@@ -92,7 +92,7 @@ const config: Config = {
           position: 'right',
         },
         {
-          href: 'https://linkedin.com/in/b825b712a',
+          href: 'https://www.linkedin.com/in/b825b712a/',
           label: 'LinkedIn',
           position: 'right',
         },
@@ -123,7 +123,7 @@ const config: Config = {
             },
             {
               label: 'LinkedIn',
-              href: 'https://linkedin.com/in/b825b712a',
+              href: 'https://www.linkedin.com/in/b825b712a/',
             },
             {
               label: 'GitHub',
