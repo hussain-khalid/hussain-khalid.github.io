@@ -36,7 +36,14 @@ const sidebars: SidebarsConfig = {
       label: 'User Guides',
       items: [
         'tutorial-basics/congratulations',
-        'tutorial-basics/create-a-blog-post',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Advanced Topics',
+      items: [
+        'tutorial-extras/manage-docs-versions',
+        'tutorial-extras/translate-your-site',
       ],
     },
   ],
