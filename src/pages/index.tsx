@@ -20,7 +20,8 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/intro">
+            to="/docs/intro"
+            style={{ textDecoration: 'none', display: 'inline-block' }}>
             View Writing Samples 📝
           </Link>
         </div>
