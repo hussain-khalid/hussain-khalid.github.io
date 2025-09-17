@@ -2,46 +2,35 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Welcome to My Writing Portfolio
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Hello! I'm **Hussain Khalid**, a technical writer and documentation specialist.
 
-## Getting Started
+## About My Work
 
-Get started by **creating a new site**.
+I specialize in creating clear, comprehensive documentation that helps users and developers understand complex technical concepts. My writing samples showcase various types of technical communication:
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+- **Technical Documentation** - User guides, API references, and system documentation
+- **API Documentation** - REST API guides, integration tutorials, and developer resources  
+- **User Guides** - Step-by-step instructions and troubleshooting guides
 
-### What you'll need
+## What You'll Find Here
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+This portfolio contains examples of my technical writing across different formats and audiences:
 
-## Generate a new site
+- **Clear, concise explanations** of complex topics
+- **Well-structured documentation** with logical flow and navigation
+- **Code examples and tutorials** that developers can follow
+- **User-focused content** that addresses real-world needs
 
-Generate a new Docusaurus site using the **classic template**.
+## Contact Me
 
-The classic template will automatically be added to your project after you run the command:
+I'm always interested in new opportunities and collaborations. Feel free to reach out:
 
-```bash
-npm init docusaurus@latest my-website classic
-```
+- **Email**: hk9804211@gmail.com
+- **LinkedIn**: [linkedin.com/in/b825b712a](https://linkedin.com/in/b825b712a)
+- **GitHub**: [github.com/hussain-khalid](https://github.com/hussain-khalid)
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+## Explore My Samples
 
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+Browse through the different categories in the sidebar to see examples of my work across various documentation types and formats.

@@ -5,8 +5,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Hussain Khalid | Writing Portfolio',
+  tagline: 'Technical Writing & Documentation Samples',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -73,22 +73,27 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'My Site',
+      title: 'Hussain Khalid',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Hussain Khalid Logo',
         src: 'img/logo.svg',
       },
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'writingSamplesSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Writing Samples',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/hussain-khalid',
           label: 'GitHub',
+          position: 'right',
+        },
+        {
+          href: 'https://linkedin.com/in/b825b712a',
+          label: 'LinkedIn',
           position: 'right',
         },
       ],
@@ -97,46 +102,50 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Writing Samples',
           items: [
             {
-              label: 'Tutorial',
+              label: 'Technical Documentation',
               to: '/docs/intro',
             },
+            {
+              label: 'API Documentation',
+              to: '/docs/tutorial-basics/create-a-document',
+            },
           ],
         },
         {
-          title: 'Community',
+          title: 'Contact',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'Email',
+              href: 'mailto:hk9804211@gmail.com',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: 'LinkedIn',
+              href: 'https://linkedin.com/in/b825b712a',
             },
             {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
+              label: 'GitHub',
+              href: 'https://github.com/hussain-khalid',
             },
           ],
         },
         {
-          title: 'More',
+          title: 'Portfolio',
           items: [
             {
               label: 'Blog',
               to: '/blog',
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: 'Writing Samples',
+              to: '/docs/intro',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Hussain Khalid. All rights reserved.`,
     },
     prism: {
       theme: prismThemes.github,
