@@ -1,0 +1,19 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="80" fill="url(#grad3)" opacity="0.1"/>
+  <circle cx="100" cy="100" r="70" fill="white" stroke="url(#grad3)" stroke-width="3"/>
+  <circle cx="100" cy="80" r="15" fill="url(#grad3)"/>
+  <path d="M70 110 Q100 90 130 110" stroke="url(#grad3)" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <rect x="60" y="130" width="80" height="20" rx="10" fill="url(#grad3)" opacity="0.3"/>
+  <rect x="70" y="135" width="60" height="3" rx="1.5" fill="url(#grad3)"/>
+  <rect x="70" y="142" width="40" height="3" rx="1.5" fill="url(#grad3)" opacity="0.7"/>
+  <path d="M50 50 L60 40 L70 50 L60 60 Z" fill="url(#grad3)" opacity="0.7"/>
+  <path d="M130 50 L140 40 L150 50 L140 60 Z" fill="url(#grad3)" opacity="0.7"/>
+  <path d="M50 150 L60 140 L70 150 L60 160 Z" fill="url(#grad3)" opacity="0.7"/>
+  <path d="M130 150 L140 140 L150 150 L140 160 Z" fill="url(#grad3)" opacity="0.7"/>
+</svg>
