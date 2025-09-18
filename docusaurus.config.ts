@@ -5,8 +5,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Hussain Khalid | Technical Writing Portfolio',
-  tagline: 'Professional Technical Writer & Documentation Specialist',
+  title: 'Hussain Khalid',
+  tagline: 'Technical Writer & Documentation Specialist',
   favicon: 'img/favicon.svg',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -52,6 +52,10 @@ const config: Config = {
         },
       } satisfies Preset.Options,
     ],
+  ],
+
+  stylesheets: [
+    'https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@300;400;500;600;700&display=swap',
   ],
 
   themeConfig: {
