@@ -34,8 +34,8 @@ export default function Home(): ReactNode {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`${siteConfig.title}`}
-      description="Technical Writing & Documentation Portfolio - Clear, comprehensive documentation for developers and users">
+      title="Hussain Khalid | Professional Technical Writer & Documentation Specialist"
+      description="Professional technical writer specializing in developer documentation, API guides, user manuals, and technical content that makes complex topics accessible. View writing samples and contact for your documentation needs.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

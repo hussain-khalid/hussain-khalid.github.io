@@ -17,30 +17,38 @@ const sidebars: SidebarsConfig = {
     'intro',
     {
       type: 'category',
-      label: 'Technical Documentation',
+      label: 'SDK Documentation',
       items: [
-        'tutorial-basics/create-a-document',
-        'tutorial-basics/create-a-page',
-        'tutorial-basics/markdown-features',
+        'tutorial-basics/video-calling-sdk-guide',
+        'tutorial-basics/api-getting-started',
       ],
     },
     {
       type: 'category',
-      label: 'API Documentation',
+      label: 'Developer Guides',
       items: [
+        'tutorial-basics/create-a-document',
         'tutorial-basics/deploy-your-site',
       ],
     },
     {
       type: 'category',
-      label: 'User Guides',
+      label: 'User Onboarding',
       items: [
+        'tutorial-basics/user-guide-onboarding',
         'tutorial-basics/congratulations',
       ],
     },
     {
       type: 'category',
-      label: 'Advanced Topics',
+      label: 'Technical Documentation',
+      items: [
+        'tutorial-basics/create-a-page',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Documentation Management',
       items: [
         'tutorial-extras/manage-docs-versions',
         'tutorial-extras/translate-your-site',

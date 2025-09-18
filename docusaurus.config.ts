@@ -5,8 +5,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Hussain Khalid | Writing Portfolio',
-  tagline: 'Technical Writing & Documentation Samples',
+  title: 'Hussain Khalid | Technical Writing Portfolio',
+  tagline: 'Professional Technical Writer & Documentation Specialist',
   favicon: 'img/favicon.svg',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -57,6 +57,17 @@ const config: Config = {
   themeConfig: {
     // Replace with your project's social card
     image: 'img/portfolio-social-card.svg',
+    metadata: [
+      {name: 'keywords', content: 'technical writer, API documentation, SDK documentation, video calling APIs, developer documentation, JavaScript documentation, React Native, Java documentation, C++ documentation, C# documentation, Docusaurus, docs-as-code, Computer Science, Hussain Khalid'},
+      {name: 'author', content: 'Hussain Khalid'},
+      {property: 'og:type', content: 'website'},
+      {property: 'og:title', content: 'Hussain Khalid | Technical Writer - Video Calling APIs & SDKs'},
+      {property: 'og:description', content: 'Technical writer with Computer Science background and 4+ years creating developer documentation for Video Calling APIs and SDKs across JavaScript, React Native, Java, C++, and C#.'},
+      {property: 'og:image', content: 'https://hussain-khalid.github.io/img/portfolio-social-card.svg'},
+      {name: 'twitter:card', content: 'summary_large_image'},
+      {name: 'twitter:title', content: 'Hussain Khalid | Technical Writer - Video Calling APIs & SDKs'},
+      {name: 'twitter:description', content: 'Technical writer specializing in developer documentation for Video Calling APIs and SDKs across multiple programming languages.'},
+    ],
     navbar: {
       title: 'Hussain Khalid',
       logo: {
@@ -70,6 +81,21 @@ const config: Config = {
           sidebarId: 'writingSamplesSidebar',
           position: 'left',
           label: 'Writing Samples',
+        },
+        {
+          to: '/about',
+          position: 'left',
+          label: 'About',
+        },
+        {
+          to: '/projects',
+          position: 'left',
+          label: 'Projects',
+        },
+        {
+          to: '/contact',
+          position: 'left',
+          label: 'Contact',
         },
         {
           href: 'https://github.com/hussain-khalid',
