@@ -4,30 +4,32 @@ title: New User Onboarding Guide
 description: Step-by-step guide for new users to set up their account, configure settings, and complete their first project.
 ---
 
-# New User Onboarding Guide
+# New user onboarding guide
 
-Welcome! This guide will help you get started with your new account and walk you through completing your first project.
+This guide helps you get started with your new account and complete your first project.
 
-## Getting Started Checklist
+## Before you begin
 
-Before diving in, make sure you have:
+Before getting started, make sure you have:
 
 - [ ] A valid email address for account verification
 - [ ] Your team or organization details (if applicable)
 - [ ] Any integration credentials you plan to use
 
-## Step 1: Account Setup
+## Step 1: Set up your account
 
-### Creating Your Profile
+### Create your profile
 
-1. **Verify your email address**
-   - Check your inbox for a verification email
-   - Click the verification link
-   - If you don't see the email, check your spam folder
+To verify your email address, complete the following steps:
 
-2. **Complete your profile**
-   - Add your full name and profile photo
-   - Set your timezone for accurate scheduling
+1. Check your inbox for a verification email.
+2. Click the verification link.
+3. If you don't see the email, check your spam folder.
+
+To complete your profile, complete the following steps:
+
+1. Add your full name and profile photo.
+2. Set your timezone for accurate scheduling.
    - Choose your notification preferences
 
 3. **Set up two-factor authentication** (recommended)

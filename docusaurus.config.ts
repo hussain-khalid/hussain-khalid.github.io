@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Hussain Khalid',
-  tagline: 'Technical Writer & Documentation Specialist',
+  tagline: 'Technical writer and documentation specialist',
   favicon: 'img/favicon.svg',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -84,7 +84,7 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'writingSamplesSidebar',
           position: 'left',
-          label: 'Writing Samples',
+          label: 'Writing samples',
         },
         {
           to: '/about',
@@ -117,14 +117,14 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Writing Samples',
+          title: 'Writing samples',
           items: [
             {
-              label: 'Technical Documentation',
+              label: 'Technical documentation',
               to: '/docs/intro',
             },
             {
-              label: 'API Documentation',
+              label: 'API documentation',
               to: '/docs/developer-tools/create-a-document',
             },
           ],
@@ -150,7 +150,7 @@ const config: Config = {
           title: 'Portfolio',
           items: [
             {
-              label: 'Writing Samples',
+              label: 'Writing samples',
               to: '/docs/intro',
             },
             {

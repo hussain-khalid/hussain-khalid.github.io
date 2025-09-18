@@ -6,52 +6,54 @@ description: Technical writer with Computer Science background and 4+ years crea
 
 # About Hussain Khalid
 
-Hello! I'm **Hussain Khalid**, a technical writer with a Computer Science background and over four years of experience creating clear, practical documentation for software products. My work focuses on developer guides, API/SDK references, and training materials that consistently improve onboarding and customer satisfaction.
+This page provides an overview of my experience as a technical writer specializing in developer documentation.
+
+I'm Hussain Khalid, a technical writer with a Computer Science background and over four years of experience creating clear, practical documentation for software products. I focus on developer guides, API references, SDK documentation, and training materials that improve onboarding and customer satisfaction.
 
 ## Professional Experience
 
 ### Technical Writer
 **Specializing in Video Calling APIs and SDKs**
 
-- **Developer Documentation**: Created and maintained comprehensive documentation for Video Calling APIs and SDKs across 5+ programming languages (JavaScript, C++, Java, C#, React Native)
-- **Content Strategy**: Built modular content patterns and reusable snippets, reducing documentation duplication by ~30%
-- **Developer Experience**: Produced API references, quickstarts, and conceptual guides that shortened new developer onboarding time by ~20%
-- **Information Architecture**: Enhanced discoverability by restructuring navigation, refining content flow, and aligning with Google Developer Style Guide
-- **Docs-as-Code Workflow**: Implemented modern documentation workflows using Git, Docusaurus, and Vercel for streamlined reviews, versioning, and continuous deployment
+- **Developer documentation**: Created and maintained comprehensive documentation for Video Calling APIs and SDKs across five programming languages: JavaScript, C++, Java, C#, and React Native.
+- **Content strategy**: Built modular content patterns and reusable snippets, reducing documentation duplication by approximately 30%.
+- **Developer experience**: Produced API references, quickstart guides, and conceptual guides that shortened new developer onboarding time by approximately 20%.
+- **Information architecture**: Enhanced discoverability by restructuring navigation, refining content flow, and aligning with the Google Developer Documentation Style Guide.
+- **Docs-as-code workflow**: Implemented modern documentation workflows using Git, Docusaurus, and Vercel for streamlined reviews, versioning, and continuous deployment.
 
 ### Lab Engineer & Educator
 **Computer Science Department**
 
-- **Teaching Support**: Assisted faculty in teaching Computer Science courses, supported students with lab assignments in C++, Java, and C#
-- **Assessment Design**: Created quizzes and assessments that helped 30% of struggling students improve grades through hands-on guidance
-- **Mentoring**: Provided 1:1 mentoring, simplifying theoretical concepts into practical applications
+- **Teaching support**: Assisted faculty in teaching Computer Science courses and supported students with lab assignments in C++, Java, and C#.
+- **Assessment design**: Created quizzes and assessments that helped 30% of struggling students improve grades through hands-on guidance.
+- **Mentoring**: Provided one-on-one mentoring, simplifying theoretical concepts into practical applications.
 
 ## Education & Certifications
 
-### Bachelor's Degree in Computer Science (2014 - 2018)
-**Core Competencies**: Data structures, algorithms, object-oriented programming, and Artificial Intelligence fundamentals
+### Bachelor's degree in Computer Science (2014-2018)
+Core competencies: Data structures, algorithms, object-oriented programming, and artificial intelligence fundamentals.
 
-### Professional Certifications
-- **Huawei HCIE** (2021) - Advanced networking and cloud technologies
-- **API Documentation & Developer Experience** (In Progress) - Advanced studies via idratherbewriting.com
+### Professional certifications
+- **Huawei HCIE** (2021): Advanced networking and cloud technologies
+- **API Documentation and Developer Experience** (in progress): Advanced studies via idratherbewriting.com
 
 ## Technical Skills
 
-### Documentation Types
-- API References & SDK Documentation
-- Developer Quickstarts & Getting Started Guides
-- Conceptual Documentation
-- Release Notes & Change Logs
-- Training Materials & Tutorials
+### Documentation types
+- API references and SDK documentation
+- Developer quickstart guides and getting started guides
+- Conceptual documentation
+- Release notes and changelogs
+- Training materials and tutorials
 
-### Tools & Technologies
-- **Documentation Platforms**: Docusaurus, Git, Markdown
-- **Developer Tools**: Postman, JSON, XML
-- **Style Guides**: Google Developer Documentation Style Guide, Microsoft Writing Style Guide
+### Tools and technologies
+- **Documentation platforms**: Docusaurus, Git, Markdown
+- **Developer tools**: Postman, JSON, XML
+- **Style guides**: Google Developer Documentation Style Guide, Microsoft Writing Style Guide
 - **Deployment**: Vercel, continuous integration workflows
-- **Programming Context**: JavaScript, C++, Java, C#, React Native
+- **Programming languages**: JavaScript, C++, Java, C#, React Native
 
-### Process & Methodology
+### Process and methodology
 - Docs-as-code workflows with version control
 - Content reuse strategies and modular documentation
 - Cross-functional collaboration with engineering teams
@@ -59,24 +61,24 @@ Hello! I'm **Hussain Khalid**, a technical writer with a Computer Science backgr
 
 ## Featured Projects
 
-### Chat UIKit API Documentation
-Built a comprehensive documentation web application using Docusaurus, featuring clear API references and developer guides that streamline integration for chat functionality.
+### Chat UIKit API documentation
+Built a comprehensive documentation web application using Docusaurus. The documentation features clear API references and developer guides that streamline integration for chat functionality.
 
-### Neural Network Folk Music Composer
-Developed a neural network capable of learning Irish folk song patterns to generate new compositions, demonstrating practical application of AI concepts.
+### Neural network folk music composer
+Developed a neural network capable of learning Irish folk song patterns to generate new compositions, demonstrating practical application of artificial intelligence concepts.
 
-## What You'll Find Here
+## What you'll find here
 
-This portfolio showcases my experience in:
+This portfolio showcases my experience in creating technical documentation across various formats and industries.
 
-## Contact Me
+## Contact me
 
-I'm always interested in new opportunities and collaborations. Feel free to reach out:
+For new opportunities and collaborations, you can reach me through the following channels:
 
 - **Email**: hk9804211@gmail.com
 - **LinkedIn**: [linkedin.com/in/b825b712a](https://linkedin.com/in/b825b712a)
 - **GitHub**: [github.com/hussain-khalid](https://github.com/hussain-khalid)
 
-## Explore My Samples
+## Next steps
 
-Browse through the different categories in the sidebar to see examples of my work across various documentation types and formats.
+To see examples of my work, browse the different categories in the sidebar. Each section contains samples of various documentation types and formats.

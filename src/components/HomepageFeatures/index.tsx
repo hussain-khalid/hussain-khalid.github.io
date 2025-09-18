@@ -13,7 +13,7 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Technical Documentation',
+    title: 'Technical documentation',
     Svg: require('@site/static/img/technical-docs-icon.svg').default,
     description: (
       <>
@@ -24,18 +24,18 @@ const FeatureList: FeatureItem[] = [
     link: '/docs/developer-tools/create-a-document',
   },
   {
-    title: 'API Documentation',
+    title: 'API documentation',
     Svg: require('@site/static/img/api-docs-icon.svg').default,
     description: (
       <>
-        Well-structured API guides with code examples, integration tutorials,
+        Structured API guides with code examples, integration tutorials,
         and developer-friendly references.
       </>
     ),
     link: '/docs/developer-tools/deploy-your-site',
   },
   {
-    title: 'User Guides',
+    title: 'User guides',
     Svg: require('@site/static/img/user-guides-icon.svg').default,
     description: (
       <>

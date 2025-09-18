@@ -4,19 +4,19 @@ title: API Getting Started Guide
 description: Complete guide to get started with the REST API, including authentication, making your first request, and handling responses.
 ---
 
-# API Getting Started Guide
+# API getting started guide
 
-This guide will walk you through everything you need to know to start using our REST API effectively.
+This guide shows you how to start using the REST API effectively.
 
 ## Overview
 
-Our REST API provides programmatic access to manage resources, retrieve data, and integrate with your applications. The API follows REST conventions and returns JSON-formatted responses.
+The REST API provides programmatic access to manage resources, retrieve data, and integrate with your applications. The API follows REST conventions and returns JSON-formatted responses.
 
 **Base URL**: `https://api.example.com/v1/`
 
 ## Authentication
 
-### API Key Authentication
+### API key authentication
 
 All API requests require authentication using an API key passed in the request header.
 
@@ -25,20 +25,22 @@ curl -H "Authorization: Bearer YOUR_API_KEY" \
      https://api.example.com/v1/users
 ```
 
-### Getting Your API Key
+### Get your API key
 
-1. Log in to your account dashboard
-2. Navigate to **Settings > API Keys**
-3. Click **Generate New API Key**
-4. Copy and securely store your API key
+To get your API key, complete the following steps:
 
-:::warning Security Note
+1. Log in to your account dashboard.
+2. Go to **Settings > API Keys**.
+3. Click **Generate New API Key**.
+4. Copy and securely store your API key.
+
+:::warning Security note
 Keep your API key secure and never expose it in client-side code. Use environment variables to store API keys in your applications.
 :::
 
-## Making Your First Request
+## Make your first request
 
-Let's start with a simple GET request to retrieve your user profile:
+To get started, make a simple GET request to retrieve your user profile:
 
 ### Request
 
