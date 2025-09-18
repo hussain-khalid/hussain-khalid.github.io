@@ -18,14 +18,14 @@
   padding: 1.5rem;
   transition: all 0.3s ease;
   border: 2px solid transparent;
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: var(--ifm-background-surface-color);
+  box-shadow: var(--ifm-global-shadow-lw);
   height: 100%;
 }
 
 .featureLink:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  box-shadow: var(--ifm-global-shadow-md);
   border-color: #007bff;
   text-decoration: none;
   color: inherit;
