@@ -21,7 +21,7 @@ const FeatureList: FeatureItem[] = [
         understand complex systems and processes.
       </>
     ),
-    link: '/docs/tutorial-basics/create-a-document',
+    link: '/docs/developer-tools/create-a-document',
   },
   {
     title: 'API Documentation',
@@ -32,7 +32,7 @@ const FeatureList: FeatureItem[] = [
         and developer-friendly references.
       </>
     ),
-    link: '/docs/tutorial-basics/deploy-your-site',
+    link: '/docs/developer-tools/deploy-your-site',
   },
   {
     title: 'User Guides',
@@ -43,7 +43,7 @@ const FeatureList: FeatureItem[] = [
         accessible to users of all technical levels.
       </>
     ),
-    link: '/docs/tutorial-basics/congratulations',
+    link: '/docs/user-guides/congratulations',
   },
 ];
 

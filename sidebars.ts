@@ -17,41 +17,35 @@ const sidebars: SidebarsConfig = {
     'intro',
     {
       type: 'category',
-      label: 'SDK Documentation',
+      label: 'SDK Integration',
       items: [
-        'tutorial-basics/video-calling-sdk-guide',
-        'tutorial-basics/api-getting-started',
+        'sdk-integration/video-calling-sdk-guide',
+        'sdk-integration/api-getting-started',
       ],
     },
     {
       type: 'category',
-      label: 'Developer Guides',
+      label: 'User Guides',
       items: [
-        'tutorial-basics/create-a-document',
-        'tutorial-basics/deploy-your-site',
+        'user-guides/user-guide-onboarding',
+        'user-guides/congratulations',
       ],
     },
     {
       type: 'category',
-      label: 'User Onboarding',
+      label: 'Developer Tools',
       items: [
-        'tutorial-basics/user-guide-onboarding',
-        'tutorial-basics/congratulations',
+        'developer-tools/create-a-document',
+        'developer-tools/create-a-page',
+        'developer-tools/deploy-your-site',
       ],
     },
     {
       type: 'category',
-      label: 'Technical Documentation',
+      label: 'Docusaurus Admin',
       items: [
-        'tutorial-basics/create-a-page',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'Documentation Management',
-      items: [
-        'tutorial-extras/manage-docs-versions',
-        'tutorial-extras/translate-your-site',
+        'docusaurus-admin/manage-docs-versions',
+        'docusaurus-admin/translate-your-site',
       ],
     },
   ],

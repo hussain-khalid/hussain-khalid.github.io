@@ -121,7 +121,7 @@ const config: Config = {
             },
             {
               label: 'API Documentation',
-              to: '/docs/tutorial-basics/create-a-document',
+              to: '/docs/developer-tools/create-a-document',
             },
           ],
         },
