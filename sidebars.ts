@@ -17,10 +17,24 @@ const sidebars: SidebarsConfig = {
     'intro',
     {
       type: 'category',
-      label: 'SDK Integration',
+      label: 'API Documentation',
       items: [
-        'sdk-integration/video-calling-sdk-guide',
-        'sdk-integration/api-getting-started',
+        'api-documentation/overview',
+        {
+          type: 'category',
+          label: 'SDK Documentation',
+          items: [
+            'api-documentation/sdk-documentation/video-calling-sdk-guide',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'REST APIs',
+          items: [
+            'api-documentation/rest-apis/api-getting-started',
+            'api-documentation/rest-apis/interactive-api-playground',
+          ],
+        },
       ],
     },
     {
