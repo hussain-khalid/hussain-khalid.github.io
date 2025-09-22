@@ -96,7 +96,7 @@ Use either of the following methods to add the Video SDK to your project.
 
   </TabItem>
   <TabItem value="tab2" label="Manual integration">
-    1. Download the latest version of Video SDK from the  the [SDKs](/sdks?platform=android) page and unzip it.
+    1. Download the latest version of Video SDK from the  the [SDKs](https://docs.agora.io/en/sdks) page and unzip it.
 
     1. Open the unzipped file and copy the following files or subfolders to your project path.
 
@@ -333,7 +333,7 @@ When the call ends, clean up resources by leaving the channel and stopping the p
 
 To test this project, take the following steps:
 
-1. Replace the `myAppId`, `channelName`, and `token` with values from [Agora Console](sso2.agora.io/en/login).
+1. Replace the `myAppId`, `channelName`, and `token` with values from [Agora Console](https://console.agora.io/v2).
 
 1. Run the app on a simulator or physical device in Android Studio.
 
