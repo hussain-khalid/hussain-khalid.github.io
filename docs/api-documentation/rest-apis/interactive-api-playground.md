@@ -2,6 +2,7 @@
 sidebar_position: 2
 title: Interactive API Playground
 description: Test Agora Video Calling REST APIs directly in your browser with our interactive playground, similar to ChatGPT's API interface.
+hide_table_of_contents: true
 ---
 
 # Interactive API playground
@@ -22,15 +23,13 @@ This playground allows you to test Agora Video Calling REST APIs directly in you
 
 Test the channel creation endpoint with your Agora credentials:
 
-import AgoraApiTester from '@site/src/components/AgoraApiTester';
-
-<AgoraApiTester endpoint="create-channel" />
+ 
 
 ### Get channel information
 
 Query details about an existing video channel:
 
-<AgoraApiTester endpoint="get-channel" />
+ 
 
 ## Recording management APIs
 
@@ -38,13 +37,13 @@ Query details about an existing video channel:
 
 Begin recording a video channel session:
 
-<AgoraApiTester endpoint="start-recording" />
+ 
 
 ### Stop recording
 
 End an active recording session and get file information:
 
-<AgoraApiTester endpoint="stop-recording" />
+ 
 
 ## How to use the playground
 

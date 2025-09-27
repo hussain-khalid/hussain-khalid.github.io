@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Hussain Khalid',
-  tagline: 'Technical writer and documentation specialist',
+  tagline: 'Technical documentation specialist',
   favicon: 'img/favicon.svg',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -125,7 +125,7 @@ const config: Config = {
             },
             {
               label: 'API documentation',
-              to: '/docs/developer-tools/create-a-document',
+              to: '/docs/sdk-documentation/video-calling-sdk-guide',
             },
           ],
         },

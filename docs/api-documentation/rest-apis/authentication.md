@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: REST APIs for Video Calling
+title: Authentication for REST APIs
 description: Complete guide to get started with the Agora Video Calling REST API, including authentication, channel management, and real-time communication features.
 hide_table_of_contents: true
 ---

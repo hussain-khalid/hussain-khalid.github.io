@@ -32,7 +32,7 @@ const FeatureList: FeatureItem[] = [
         and developer-friendly references.
       </>
     ),
-    link: '/docs/developer-tools/deploy-your-site',
+    link: '/docs/api-documentation/sdk-documentation/video-calling-sdk-guide',
   },
   {
     title: 'User guides',

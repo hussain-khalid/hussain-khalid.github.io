@@ -1,0 +1,169 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr minmax(320px, 520px);
+  gap: 1.25rem;
+  align-items: start;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 8px;
+  padding: 1rem;
+  background: var(--ifm-background-surface-color);
+}
+
+.left {}
+
+.right {
+  position: sticky;
+  top: 72px;
+  align-self: start;
+  border-left: 1px solid var(--ifm-color-emphasis-200);
+  padding-left: 1rem;
+}
+
+.rightIntro {
+  margin-bottom: .75rem;
+}
+
+.rightBox {
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 12px;
+  padding: 1rem;
+  background: var(--ifm-background-surface-color);
+}
+
+.rightBox + .rightBox {
+  margin-top: .75rem;
+}
+
+.rightCard {
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  background: transparent;
+}
+
+.rightSection { padding: 0; }
+
+.rightSection + .rightSection {
+  margin-top: .75rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.badge {
+  background: #1f2937;
+  color: #fff;
+  border-radius: 6px;
+  padding: .125rem .5rem;
+  font-size: .75rem;
+}
+
+.summary {
+  margin: .5rem 0 1rem 0;
+}
+
+.section {
+  margin-top: .75rem;
+}
+
+.sectionTitle {
+  font-weight: 600;
+  margin-bottom: .25rem;
+}
+
+.fieldList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.fieldRow {
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+  padding: .5rem 0;
+}
+
+.fieldHeader {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.fieldName {
+  font-family: var(--ifm-font-family-monospace);
+}
+
+.fieldType {
+  color: var(--ifm-color-emphasis-700);
+  font-family: var(--ifm-font-family-monospace);
+  font-size: .85em;
+}
+
+.fieldReq {
+  color: #b91c1c;
+  border: 1px solid #b91c1c33;
+  padding: 0 .25rem;
+  border-radius: 4px;
+  font-size: .7em;
+}
+
+.fieldDesc {
+  margin-top: .25rem;
+}
+
+.fieldChildren {
+  list-style: none;
+  margin: .25rem 0 0 .75rem;
+  padding: 0 0 0 .75rem;
+  border-left: 2px dashed var(--ifm-color-emphasis-200);
+}
+
+.exampleHeader {
+  font-weight: 600;
+  font-size: 1.05rem;
+  margin-bottom: .5rem;
+}
+
+.code {
+  margin: 0;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow: auto;
+  background: var(--ifm-pre-background);
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: var(--ifm-color-emphasis-300) transparent;
+}
+
+.code::-webkit-scrollbar {
+  height: 8px;
+}
+
+.code::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.code::-webkit-scrollbar-thumb {
+  background-color: var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+}
+
+/* simpleContainer removed after revert */
+
+@media (max-width: 996px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .right {
+    position: static;
+  }
+}
+
+
