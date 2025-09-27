@@ -125,7 +125,7 @@ const config: Config = {
             },
             {
               label: 'API documentation',
-              to: '/docs/sdk-documentation/video-calling-sdk-guide',
+              to: '/docs/api-documentation/sdk-documentation/video-calling-sdk-guide',
             },
           ],
         },
