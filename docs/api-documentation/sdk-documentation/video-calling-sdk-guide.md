@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: SDK Quickstart
+title: Quickstart
 description: Complete guide to integrate Video Calling SDK across multiple platforms including JavaScript, React Native, Java, C++, and C# with code examples and best practices.
 ---
 

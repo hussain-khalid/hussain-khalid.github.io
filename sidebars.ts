@@ -31,8 +31,8 @@ const sidebars: SidebarsConfig = {
           type: 'category',
           label: 'REST APIs',
           items: [
+            'api-documentation/rest-apis/rest-authentication',
             'api-documentation/rest-apis/api-getting-started',
-            'api-documentation/rest-apis/interactive-api-playground',
           ],
         },
       ],
