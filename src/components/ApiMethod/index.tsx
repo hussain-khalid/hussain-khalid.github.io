@@ -1,20 +1,30 @@
 import React from 'react';
+import ThemedCodeBlock from '@theme/CodeBlock';
 import styles from './styles.module.css';
 
 type ApiField = {
   name: string;
   type?: string;
   required?: boolean;
-  description?: string;
+  description?: React.ReactNode;
   children?: ApiField[];
 };
 
 type ApiMethodProps = {
   title: string;
-  summary?: string;
+  summary?: React.ReactNode;
   badge?: string;
-  fieldsTitle?: string;
-  fields?: ApiField[];
+  leftIntro?: React.ReactNode;
+  // Support both spellings for convenience
+  pathParametersTitle?: string;
+  pathParameterTitle?: string;
+  pathParameters?: ApiField[];
+  bodyParametersTitle?: string;
+  bodyParameterTitle?: string;
+  bodyParameters?: ApiField[],
+  responseParametersTitle?: string;
+  responseParameterTitle?: string;
+  responseParameters?: ApiField[];
   exampleTitle?: string;
   exampleCode?: string;
   exampleLanguage?: 'json' | 'ts' | 'js' | 'bash' | 'http' | string;
@@ -25,12 +35,12 @@ type ApiMethodProps = {
 };
 
 const CodeBlock: React.FC<{ code?: string; language?: string }>
-  = ({ code, language = 'json' }) => {
+  = ({ code, language }) => {
   if (!code) return null;
   return (
-    <pre className={styles.code} data-language={language}>
-      <code>{code}</code>
-    </pre>
+    <ThemedCodeBlock language={language} className={styles.codeBlock}>
+      {code}
+    </ThemedCodeBlock>
   );
 };
 
@@ -57,11 +67,17 @@ const FieldRow: React.FC<{ field: ApiField }> = ({ field }) => {
 };
 
 const ApiMethod: React.FC<ApiMethodProps> = ({
-  title,
   summary,
-  badge,
-  fieldsTitle = 'Parameters',
-  fields = [],
+  leftIntro,
+  pathParametersTitle,
+  pathParameterTitle,
+  pathParameters = [],
+  bodyParametersTitle,
+  bodyParameterTitle,
+  bodyParameters = [],
+  responseParametersTitle,
+  responseParameterTitle,
+  responseParameters = [],
   exampleTitle = 'Example',
   exampleCode,
   exampleLanguage = 'json',
@@ -70,24 +86,46 @@ const ApiMethod: React.FC<ApiMethodProps> = ({
   responseLanguage = 'json',
   rightIntro,
 }) => {
+  const computedPathTitle = pathParameterTitle ?? pathParametersTitle ?? 'Path parameters';
+  const computedBodyTitle = bodyParameterTitle ?? bodyParametersTitle ?? 'Body';
+  const computedRespParamsTitle = responseParameterTitle ?? responseParametersTitle ?? 'Response parameters';
   return (
     <div className={styles.container}>
       <div className={styles.left}>
-        <div className={styles.header}>
-          <h3 className={styles.title}>{title}</h3>
-          {badge && <span className={styles.badge}>{badge}</span>}
-        </div>
+        {leftIntro && (
+          <div className={styles.leftIntro}>{leftIntro}</div>
+        )}
         {summary && <p className={styles.summary}>{summary}</p>}
 
-        {fields && fields.length > 0 && (
-          <div className={styles.section}>
-            <div className={styles.sectionTitle}>{fieldsTitle}</div>
+        {pathParameters && pathParameters.length > 0 && (
+          <details className={styles.section} open>
+            <summary className={styles.sectionTitle}>{computedPathTitle}</summary>
             <ul className={styles.fieldList}>
-              {fields.map((f) => (
+              {pathParameters.map((f) => (
                 <FieldRow key={f.name} field={f} />
               ))}
             </ul>
-          </div>
+          </details>
+        )}
+        {bodyParameters && bodyParameters.length > 0 && (
+          <details className={styles.section} open>
+            <summary className={styles.sectionTitle}>{computedBodyTitle}</summary>
+            <ul className={styles.fieldList}>
+              {bodyParameters.map((f) => (
+                <FieldRow key={f.name} field={f} />
+              ))}
+            </ul>
+          </details>
+        )}
+        {responseParameters && responseParameters.length > 0 && (
+          <details className={styles.section} open>
+            <summary className={styles.sectionTitle}>{computedRespParamsTitle}</summary>
+            <ul className={styles.fieldList}>
+              {responseParameters.map((f) => (
+                <FieldRow key={f.name} field={f} />
+              ))}
+            </ul>
+          </details>
         )}
       </div>
       <div className={styles.right}>

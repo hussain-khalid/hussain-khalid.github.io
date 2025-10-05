@@ -1,75 +1,58 @@
 ---
 sidebar_position: 2
-title: Quickstart
+title:  'Retrieve channel list'
 description: Complete guide to get started with the Agora Video Calling RESTful API, including authentication, channel management, and real-time communication features.
 hide_table_of_contents: true
 ---
 
 import ApiMethod from '@site/src/components/ApiMethod';
 import ApiCallout from '@site/src/components/ApiCallout';
-
-This guide shows you how to start using the Agora RESTful APIs to manage video communication channels, recording, and user sessions.
-
-## Overview
-
-The Agora RESTful API provides programmatic access to access video calling channels, control recording sessions, and retrieve usage analytics. The API follows RESTful conventions and returns JSON-formatted responses.
-
-**Base URL**: `https://api.agora.io/v1/`
-
-
-## Make your first request
-
-To get started, create a video calling channel using the Agora RESTful API:
-
-### Create a channel
-
-The interactive API tester below allows you to test the channel creation endpoint with your own credentials. Similar to ChatGPT's API playground, you can modify parameters, see live responses, and copy working code in multiple programming languages.
-
-### API method format example
+import ApiEndpoint from '@site/src/components/ApiEndpoint';
+import Link from '@docusaurus/Link';
 
 <ApiMethod
-  title="conversation.item.create"
-  summary="Add a new item to the conversation's context, including messages, function calls, and call results."
-  badge="OBJECT"
-  fieldsTitle="Fields"
-  fields={[
-    { name: 'type', type: 'string', required: true, description: 'Must be "conversation.item.create".' },
-    { name: 'event_id', type: 'string', description: 'Optional client-generated ID to identify this event.' },
-    { name: 'previous_item_id', type: 'string', description: 'ID of the item to insert after; if unset, the new item is appended.' },
-    { name: 'item', type: 'object', required: true, description: 'A single item within a Realtime conversation.', children: [
-      { name: 'type', type: 'string', required: true, description: 'For example, "message".' },
-      { name: 'role', type: 'string', description: 'Message role, e.g., "user" or "assistant".' },
-      { name: 'content', type: 'array', description: 'Message content parts.' }
-    ] }
+  summary={<>
+    This RESTful API lets you retrieve the list of available Video SDK channels by page. In the URL, you can specify the page number and the number of URLs on the page. On response, it returns the list of channels on the specified page according to the set <code>page_size</code>.
+  </>}
+  leftIntro={<ApiEndpoint method="Get" url="https://api.agora.io/dev/v1/channel/{appid}" />}
+  pathParameterTitle="Path parameters"
+  pathParameters={[
+    { name: 'appid', type: 'string', required: true, description: 'Your APP ID.' },
+  ]}
+  bodyParameterTitle="Body"
+  bodyParameters={[
+    { name: 'page_no', type: 'number', required: false, description: 'The page number that you want to query. The default value is 0, that is, the first page. The value of page_no cannot exceed (the total number of channels/the value of page_size - 1); otherwise, the specified page does not contain any channel.' },
+    {name: 'page_size', type: 'number', required: false, description: 'The number of channels on a page. The value range is [1,500], and the default value is 100.'}
+  ]}
+  responseParametersTitle="Response"
+  responseParameters={[
+    { name: 'success', type: 'bool', description: (<ul><li><code>true</code>: Success.</li><li><code>false</code>: Reserved for future use.</li></ul>) },
+    { name: 'data', type: 'object', description: 'Channel statistics, including the following fields:' ,  children: [
+      { name: 'channels', type: 'Array',  children: [{name: 'channel_name', type: 'string', description: 'The channel name'}, {name: 'user_count', type: 'number', description: 'The total number of users in the channel.'}], description: 'The list of channels. This array contains multiple objects. Each object shows the information on a channel and includes the following fields:'},
+      { name: 'total_size', type: 'number', description: ' The total number of channels under the specified project.' }
+    ],  },
   ]}
   exampleTitle="Request example"
-  exampleLanguage="json"
-  exampleCode={`{
-    "type": "conversation.item.create",
-    "item": {
-      "type": "message",
-      "role": "user",
-      "content": [
-        { "type": "input_text", "text": "hi" }
-      ]
-    },
-    "event_id": "b904fba0-0ec4-40af-8bbb-f908a9b26793"
-}`}
+  exampleLanguage="bash"
+  exampleCode={`curl --request GET \
+    --url https://api.sd-rtn.com/dev/v1/channel/appid \
+    --header 'Accept: application/json' \
+    --header 'Authorization: '`}
   responseTitle="Response example"
   responseLanguage="json"
   responseCode={`{
-    "code": 200,
-    "message": "success",
+    "success": true,
     "data": {
-      "resourceId": "nRHBbXZvHBjmvRezPqUe8g==",
-      "sid": "2d8c8a7d-f7b3-4c5a-9b2e-8d7f6a5b4c3e",
-      "serverResponse": {
-        "status": 1,
-        "fileList": []
-      }
+      "channels": [
+        {
+          "channel_name": "lkj144",
+          "user_count": 3
+        }
+      ],
+      "total_size": 1
     }
 }`}
-  rightIntro={<ApiCallout title="Authorization" accent="blue">This endpoint requires <strong>Basic Auth</strong>. Use your <code>Customer ID</code> as the username and <code>Customer Secret</code> as the password.</ApiCallout>}
+  rightIntro={<ApiCallout title="Authorization" accent="blue">This endpoint requires <strong><Link to="/docs/api-documentation/rest-apis/rest-authentication">Basic Auth</Link></strong>. Use your <code>Customer ID</code> as the username and <code>Customer Secret</code> as the password.</ApiCallout>}
 />
 
 
