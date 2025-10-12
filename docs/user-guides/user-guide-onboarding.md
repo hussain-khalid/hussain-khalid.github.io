@@ -1,46 +1,43 @@
 ---
 sidebar_position: 2
-title: New User Onboarding Guide
+title: Onboarding to Agora
 description: Step-by-step guide for new users to set up their account, configure settings, and complete their first project.
 ---
 
-# New user onboarding guide
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
-This guide helps you get started with your new account and complete your first project.
+This guide helps you get started with Agota account and create your first project.
 
-## Before you begin
+## Step 1: Create an Agora account
 
-Before getting started, make sure you have:
+<Tabs>
+<TabItem value="new" label="Create a new project" default>
+To sign up, complete the following steps:
 
-- [ ] A valid email address for account verification
-- [ ] Your team or organization details (if applicable)
-- [ ] Any integration credentials you plan to use
+1. Open the [signup page](https://sso.agora.io/en/signup).
 
-## Step 1: Set up your account
+1. Enter your name, last name, company name, and phone number, and choose a strong password.
 
-### Create your profile
+1. Carefully read the **Terms of Service**, **Privacy Policy**, and **Acceptable Use Policy**, tick the checkbox, and verify **hCaptcha**.
 
-To verify your email address, complete the following steps:
+1. Click **Create Account**. This will send a verification code to your specified email address.
 
-1. Check your inbox for a verification email.
-2. Click the verification link.
-3. If you don't see the email, check your spam folder.
+1. Enter your verification code, and then choose **Verify**.
+   If you don't see the email, check your spam folder.
 
-To complete your profile, complete the following steps:
+</TabItem>
+<TabItem value="new1" label="Sign up using an existing account" default>
+1. On the [signup page](https://sso.agora.io/en/signup), select the third-party account you want to use.
 
-1. Add your full name and profile photo.
-2. Set your timezone for accurate scheduling.
-   - Choose your notification preferences
+1. Follow the on-screen instructions to complete verification.
 
-3. **Set up two-factor authentication** (recommended)
-   - Go to **Settings > Security**
-   - Click **Enable 2FA**
-   - Scan the QR code with your authenticator app
-   - Save your backup codes in a secure location
+1. Carefully read the **Terms of Service**, **Privacy Policy**, and **Acceptable Use Policy**, tick the checkbox, and verify **hCaptcha**.
 
-:::tip Pro Tip
-Enable 2FA during setup to ensure your account is secure from day one. This extra step takes just a few minutes but significantly improves your account security.
-:::
+1. Click **Continue**.
+
+</TabItem>
+</Tabs>
 
 ## Step 2: Team and Organization Setup
 

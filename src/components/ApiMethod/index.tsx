@@ -49,7 +49,7 @@ const FieldRow: React.FC<{ field: ApiField }> = ({ field }) => {
     <li className={styles.fieldRow}>
       <div className={styles.fieldHeader}>
         <span className={styles.fieldName}>{field.name}</span>
-        {field.type && <span className={styles.fieldType}>{field.type}</span>}
+        <span className={styles.fieldType}>{field.type ?? ''}</span>
         {field.required && <span className={styles.fieldReq}>required</span>}
       </div>
       {field.description && (
