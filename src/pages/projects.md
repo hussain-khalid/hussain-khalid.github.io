@@ -13,7 +13,7 @@ Here are some key projects that demonstrate my technical writing and development
 **Role**: Technical Writer & Documentation Architect
 **Technology**: Docusaurus, Markdown, Git
 
-Built a comprehensive documentation web application for a Chat UIKit using Docusaurus. This project showcased my ability to create clear API references and developer guides that streamline integration for chat functionality.
+Architected and deployed a full-stack documentation portal using Docusaurus. Designed the entire schema to support 50+ API endpoints and simplify integration logic for developers.
 
 **Key Achievements:**
 - Created modular content architecture for easy maintenance
@@ -32,7 +32,7 @@ Built a comprehensive documentation web application for a Chat UIKit using Docus
 **Role**: Lead Technical Writer
 **Technology**: Multi-platform SDK documentation across 5+ languages
 
-Created and maintained comprehensive developer documentation for Video Calling APIs and SDKs across JavaScript, C++, Java, C#, and React Native platforms.
+Authored the complete developer guide suite for the Video Calling SDK, covering JavaScript, C++, Java, C#, and React Native. Managed the information architecture for all 5 platforms.
 
 **Impact & Results:**
 - **20% reduction** in developer onboarding time
@@ -70,8 +70,8 @@ Developed a neural network capable of learning Irish folk song patterns and gene
 ## Documentation Methodology & Process Innovation
 
 ### Docs-as-Code Implementation
-**Challenge**: Streamline documentation workflow for engineering teams
-**Solution**: Implemented comprehensive docs-as-code methodology
+**Challenge**: Reduce engineering friction by modernizing the documentation workflow
+**Solution**: Built a scalable Docs-as-Code pipeline using Git and CI/CD
 
 **Process Improvements:**
 - **Version Control Integration**: All documentation managed through Git

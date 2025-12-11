@@ -1,4 +1,4 @@
-import type {ReactNode} from 'react';
+import type { ReactNode } from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
@@ -9,7 +9,7 @@ import Heading from '@theme/Heading';
 import styles from './index.module.css';
 
 function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
@@ -19,10 +19,14 @@ function HomepageHeader() {
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
           <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro"
-            style={{ textDecoration: 'none', display: 'inline-block' }}>
+            className="button button--primary button--lg"
+            to="/docs/intro">
             View Writing Samples 📝
+          </Link>
+          <Link
+            className="button button--secondary button--lg"
+            to="/contact">
+            Contact Me ✉️
           </Link>
         </div>
       </div>
@@ -31,11 +35,11 @@ function HomepageHeader() {
 }
 
 export default function Home(): ReactNode {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
       title="Hussain Khalid | Professional Technical Writer & Documentation Specialist"
-      description="Professional technical writer specializing in developer documentation, API guides, user manuals, and technical content that makes complex topics accessible. View writing samples and contact for your documentation needs.">
+      description="I turn raw code into developer-friendly manuals. Specializing in API references, SDK guides, and Docs-as-Code pipelines that engineers respect.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

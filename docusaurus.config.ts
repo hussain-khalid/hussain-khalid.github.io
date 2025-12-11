@@ -1,12 +1,12 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
+import { themes as prismThemes } from 'prism-react-renderer';
+import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
   title: 'Hussain Khalid',
-  tagline: 'Technical documentation specialist',
+  tagline: 'Transforming complexity into clear documentation',
   favicon: 'img/favicon.svg',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -62,15 +62,15 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/portfolio-social-card.svg',
     metadata: [
-      {name: 'keywords', content: 'technical writer, API documentation, SDK documentation, video calling APIs, developer documentation, JavaScript documentation, React Native, Java documentation, C++ documentation, C# documentation, Docusaurus, docs-as-code, Computer Science, Hussain Khalid'},
-      {name: 'author', content: 'Hussain Khalid'},
-      {property: 'og:type', content: 'website'},
-      {property: 'og:title', content: 'Hussain Khalid | Technical Writer - Video Calling APIs & SDKs'},
-      {property: 'og:description', content: 'Technical writer with Computer Science background and 4+ years creating developer documentation for Video Calling APIs and SDKs across JavaScript, React Native, Java, C++, and C#.'},
-      {property: 'og:image', content: 'https://hussain-khalid.github.io/img/portfolio-social-card.svg'},
-      {name: 'twitter:card', content: 'summary_large_image'},
-      {name: 'twitter:title', content: 'Hussain Khalid | Technical Writer - Video Calling APIs & SDKs'},
-      {name: 'twitter:description', content: 'Technical writer specializing in developer documentation for Video Calling APIs and SDKs across multiple programming languages.'},
+      { name: 'keywords', content: 'technical writer, API documentation, SDK documentation, video calling APIs, developer documentation, JavaScript documentation, React Native, Java documentation, C++ documentation, C# documentation, Docusaurus, docs-as-code, Computer Science, Hussain Khalid' },
+      { name: 'author', content: 'Hussain Khalid' },
+      { property: 'og:type', content: 'website' },
+      { property: 'og:title', content: 'Hussain Khalid | Technical Writer - Video Calling APIs & SDKs' },
+      { property: 'og:description', content: 'Technical writer with a CS background. I build docs for APIs and SDKs that developers love to read. Expert in Docusaurus and Docs-as-Code.' },
+      { property: 'og:image', content: 'https://hussain-khalid.github.io/img/portfolio-social-card.svg' },
+      { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:title', content: 'Hussain Khalid | Technical Writer - Video Calling APIs & SDKs' },
+      { name: 'twitter:description', content: 'I turn raw code into developer-friendly manuals. Specializing in API references, SDK guides, and Docs-as-Code pipelines.' },
     ],
     navbar: {
       title: 'Hussain Khalid',

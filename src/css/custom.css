@@ -28,6 +28,17 @@
   --portfolio-border-radius: 16px;
 }
 
+/* Global Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Text Selection */
+::selection {
+  background: var(--ifm-color-primary);
+  color: white;
+}
+
 [data-theme='dark'] {
   --ifm-color-primary: #60a5fa;
   --ifm-color-primary-dark: #3b82f6;
@@ -37,7 +48,7 @@
   --ifm-color-primary-lighter: #bfdbfe;
   --ifm-color-primary-lightest: #dbeafe;
   --docusaurus-highlighted-code-line-bg: rgba(96, 165, 250, 0.2);
-  
+
   --portfolio-gradient: linear-gradient(135deg, #4c1d95 0%, #7c3aed 100%);
   --portfolio-card-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
@@ -61,8 +72,9 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
-  opacity: 0.1;
+  bottom: 0;
+  background: url('/img/hero-bg.png') center/cover no-repeat;
+  opacity: 0.15;
   pointer-events: none;
 }
 
@@ -71,6 +83,7 @@
   font-weight: 700;
   font-size: 3.5rem;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  animation: fadeSlideUp 0.8s ease-out forwards;
 }
 
 .hero__subtitle {
@@ -78,6 +91,21 @@
   font-size: 1.25rem;
   font-weight: 400;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  animation: fadeSlideUp 0.8s ease-out 0.2s forwards;
+}
+
+/* Animations */
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Navbar customization */

@@ -1,4 +1,4 @@
-import type {ReactNode} from 'react';
+import type { ReactNode } from 'react';
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import Link from '@docusaurus/Link';
@@ -17,8 +17,8 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/technical-docs-icon.svg').default,
     description: (
       <>
-        Clear, comprehensive technical documentation that helps developers and users
-        understand complex systems and processes.
+        Production-ready guides that cut support tickets and help developers
+        ship features faster.
       </>
     ),
     link: '/docs/developer-tools/create-a-document',
@@ -28,8 +28,8 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/api-docs-icon.svg').default,
     description: (
       <>
-        Structured API guides with code examples, integration tutorials,
-        and developer-friendly references.
+        Reference docs that developers actually read. Includes copy-pasteable
+        code and live examples.
       </>
     ),
     link: '/docs/api-documentation/sdk-documentation/video-calling-sdk-guide',
@@ -39,15 +39,15 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/user-guides-icon.svg').default,
     description: (
       <>
-        Step-by-step user guides and tutorials that make complex workflows
-        accessible to users of all technical levels.
+        Walkthroughs that handle the edge-cases, not just the happy path.
+        Designed for clarity and retention.
       </>
     ),
     link: '/docs/user-guides/congratulations',
   },
 ];
 
-function Feature({title, Svg, description, link}: FeatureItem) {
+function Feature({ title, Svg, description, link }: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
       <Link to={link} className={styles.featureLink}>
